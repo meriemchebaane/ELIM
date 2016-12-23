@@ -6,7 +6,7 @@
     android:baselineAligned="false">
     <Space
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="80dp" />
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="50dp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,9 +55,15 @@
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
         android:textColor="@color/white"
         android:background="@drawable/button_login_form"
-        android:text="S'identifier"/>
+        android:text="S'identifier"
+        android:onClick="connecter" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

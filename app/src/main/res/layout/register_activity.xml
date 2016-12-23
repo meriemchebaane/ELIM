@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/colorPrimary"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="10dp" >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+        android:weightSum="1">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_login_form"
+                android:hint="Username"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+            android:textColorHint="@color/Black"
+            />
+
+        <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+            android:textColorHint="@color/Black"
+            android:background="@drawable/edittext_login_form"
+            android:singleLine="true"
+                 />
+
+        <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/Black"
+                android:background="@drawable/edittext_login_form"
+                android:hint="password"
+                android:inputType="textImeMultiLine|textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+            android:layout_weight="0.17" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <!-- Login Button -->
+
+        <TextView
+            android:text="En cliquant sur S'inscrire,vous accepter les conditions d'utilisation,la politique de confidentialité de Wifi Locator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:id="@+id/textView" />
+
+        <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/button_login_form"
+                android:text="S'inscrire"
+                android:textColor="@color/white" />
+
+        <!-- Link to Login Screen -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <TextView
+            android:text="Vous avez déjà un compte? Identifier-vous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/textView2"
+            android:textAlignment="center" />
+
+
+        <TextView
+                android:id="@+id/btnLinkToLoginScreen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:background="@null"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

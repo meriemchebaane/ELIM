@@ -119,12 +119,16 @@ public class MainActivity extends AppCompatActivity {
 
             TextView SSID = (TextView) itemView.findViewById(R.id.item_SSID);
             SSID.setText(wifi.getSSID());
-            RatingBar rate =(RatingBar)itemView.findViewById(R.id.ratingBar);
+            final RatingBar rate =(RatingBar)itemView.findViewById(R.id.ratingBar);
+//            rate.setRating(2f);
+
             rate.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener(){
 
                 @Override
                 public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-
+                    rate.setRating(rating);
+                    rate.invalidate();
+                    Log.d("Rating", String.valueOf(rating));
                 }
             });
             return itemView;

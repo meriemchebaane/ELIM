@@ -52,7 +52,7 @@
                 android:layout_marginBottom="10dp"
                 android:textColorHint="@color/Black"
                 android:background="@drawable/edittext_login_form"
-                android:hint="password"
+                android:hint="@string/password"
                 android:inputType="textImeMultiLine|textPassword"
                 android:padding="10dp"
                 android:singleLine="true"
@@ -76,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dip"
                 android:background="@drawable/button_login_form"
-                android:text="S'inscrire"
+                android:text="@string/sign_up"
                 android:textColor="@color/white" />
 
         <!-- Link to Login Screen -->
@@ -84,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp" />
         <TextView
-            android:text="Vous avez déjà un compte? Identifier-vous"
+            android:text="@string/signIn_msg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"

@@ -7,9 +7,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/free_high_signal"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBZIkyVksKHjXOzGAe_v0i88C5cjCFLI1I"/>
         <activity android:name=".Login"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,8 +22,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"
-            android:label="Liste des Wifis disponibles">
+            android:label="@string/available_wifis">
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
 </manifest>

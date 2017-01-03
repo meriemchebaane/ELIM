@@ -22,7 +22,7 @@
         android:textSize="40sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:text="Detector"/>
+        android:text="Locator"/>
 
     <Space
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/edittext_login_form"
-        android:hint="Username"/>
+        android:hint="@string/user_name"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -45,7 +45,7 @@
         android:layout_marginTop="32dp"
         android:background="@drawable/edittext_login_form"
         android:inputType="textPassword"
-        android:hint="Passeword"/>
+        android:hint="@string/password"/>
 
 
 
@@ -58,7 +58,7 @@
         android:layout_marginBottom="16dp"
         android:textColor="@color/white"
         android:background="@drawable/button_login_form"
-        android:text="S'identifier"
+        android:text="@string/sign_in"
         android:onClick="connecter" />
     <Space
         android:layout_width="match_parent"
@@ -72,6 +72,6 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="15dp"
-        android:text="S'inscrire"
+        android:text="@string/sign_up"
         android:layout_marginTop="16dp"/>
 </LinearLayout>
